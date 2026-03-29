@@ -17,7 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #we define URL mapping rules for bookmodule app
     path('', include('apps.bookmodule.urls')), #the '' means regardless of the user's input he will be mapped to apps/bookmodule.urls
 ]
