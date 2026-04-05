@@ -1,5 +1,8 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
 <h1>
-    Welcome the the main page
+    {{var1}}.   Welcome the the main page
 </h1>
 
 <h2>
@@ -10,6 +13,10 @@
     no input from user, mapped to index
 </h3>
 <p>
+    
     <a href="   {% url 'second_page' %}   ">second page</a>
     <a href="   {% url 'third_page' 3 %}  ">Third page</a>
+    <a href="   {% url 'forth_page' %}"> forth page</a>
 </p>
+
+{% endblock content %}
